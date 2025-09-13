@@ -1,0 +1,34 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone from GitHub') {
+            steps {
+                echo 'Clone stage'
+                git branch: 'main', url: 'https://github.com/aswincs19/devops-task.git'
+            }
+        }
+        
+        stage('Install Dependencies & Run Tests') {
+            steps {
+                sh 'npm install'
+                sh 'npm test'
+            }
+        }
+
+        stage('Docker Build') {
+            steps {
+                sh 'docker build -t aswincs/tests .'
+            }
+        }
+
+        stage('Push Image') {
+            steps {
+                withCredentials([usernamePassword(credentialsId: 'dockerid', usernameVariable: 'USER', passwordVariable: 'PASS')]) {
+                    sh 'docker login -u $USER -p $PASS'
+                    sh 'docker push aswincs/tests'
+                }
+            }
+        }
+    }
+}
