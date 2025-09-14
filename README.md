@@ -16,6 +16,7 @@ To set up a CI/CD pipeline that showcases:
 
 ## 📁 Repository Structure
 
+```
 ├── app.js # Node.js server file
 ├── logoswayatt.png # Static logo served at root
 ├── package.json # Project metadata and dependencies
@@ -26,3 +27,4 @@ To set up a CI/CD pipeline that showcases:
 │ └── architecture.png # Architecture diagram
 ├── README.md # You're here!
 └── WRITEUP.md # Short write-up of tools, challenges, and improvements
+```
