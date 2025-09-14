@@ -10,10 +10,19 @@ To set up a CI/CD pipeline that showcases:
 
 - ✅ End-to-end automation using **Jenkins** and **GitHub**
 - ✅ Application **containerization** using **Docker**
-- ✅ Deployment on **AWS EC2 / Fargate**
-- ✅ Optionally managed via **Terraform (IaC)**
+- ✅ Deployment on **AWS EC2**
 
 ---
 
 ## 📁 Repository Structure
 
+├── app.js # Node.js server file
+├── logoswayatt.png # Static logo served at root
+├── package.json # Project metadata and dependencies
+├── Dockerfile # For containerizing the app
+├── pipeline syntax # Jenkins pipeline definition
+├── deployment-proof/ # Deployment proof (screenshots)
+│ ├── image.png
+│ └── architecture.png # Architecture diagram
+├── README.md # You're here!
+└── WRITEUP.md # Short write-up of tools, challenges, and improvements
