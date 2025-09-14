@@ -28,3 +28,12 @@ To set up a CI/CD pipeline that showcases:
 ├── README.md # You're here!
 └── WRITEUP.md # Short write-up of tools, challenges, and improvements
 ```
+## 🛠️ Tools Used
+
+| **Tool / Platform**     |
+|-------------------------|
+| **GitHub**              |
+| **Jenkins**             |
+| **Docker**              |
+| **DockerHub**           |                               
+| **AWS EC2**             |       
