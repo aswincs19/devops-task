@@ -1,36 +1,62 @@
-# 🚀 DevOps CI/CD Pipeline Project – Node.js Logo Server
+# Logo Server
 
-This project demonstrates a fully automated CI/CD pipeline using **Jenkins**, **GitHub**, **Docker**, and **AWS EC2**. It deploys a simple Express.js application that serves the **Swayatt** logo image.
+A simple Express.js web server that serves the Swayatt logo image.
 
----
+## What is this app?
 
-## ✅ Objective
+This is a lightweight Node.js application built with Express.js that serves a single logo image (`logoswayatt.png`) when accessed through a web browser. When you visit the root URL, the server responds by displaying the Swayatt logo.
 
-Set up a CI/CD pipeline that showcases:
+## Prerequisites
 
-- End-to-end automation using Jenkins and GitHub
-- Containerization with Docker
-- Deployment on AWS EC2 (Fargate)
+- Node.js (version 12 or higher)
+- npm (Node Package Manager)
 
----
+## Installation
 
-## 📁 Repository Structure
+1. Clone or download this repository
+2. Navigate to the project directory:
+   ```bash
+   cd "devops task"
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```
-├── app.js # Node.js server file
-├── logoswayatt.png # Static logo served at root
-├── package.json # Project metadata and dependencies
-├── Dockerfile # For containerizing the app
-├── Jenkinsfile # Jenkins pipeline definition
-├── terraform/ # Optional IaC configuration (Terraform)
-│ └── main.tf
-├── deployment-proof/ # Deployment proof (screenshots or URL)
-│ ├── jenkins-pipeline.png
-│ └── ecs-deployment.png
-├── docs/
-│ └── architecture.png # Architecture diagram
-├── README.md # You're here!
-└── WRITEUP.md # Short write-up of tools, challenges, and improvements
+## How to Start the App
+
+Run the following command:
+```bash
+npm start
 ```
 
+The server will start and display:
+```
+Server running on http://localhost:3000
+```
+
+## Usage
+
+Once the server is running, open your web browser and navigate to:
+```
+http://localhost:3000
+```
+
+You will see the Swayatt logo displayed in your browser.
+
+## Project Structure
+
+```
+├── app.js              # Main server file
+├── package.json        # Project dependencies and scripts
+├── logoswayatt.png     # Logo image file
+└── README.md          # This file
+```
+
+## Technical Details
+
+- **Framework**: Express.js
+- **Port**: 3000
+- **Endpoint**: GET `/` - serves the logo image
+- **File served**: `logoswayatt.png`
 
