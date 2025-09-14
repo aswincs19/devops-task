@@ -16,3 +16,21 @@ Set up a CI/CD pipeline that showcases:
 
 ## 📁 Repository Structure
 
+```
+├── app.js # Node.js server file
+├── logoswayatt.png # Static logo served at root
+├── package.json # Project metadata and dependencies
+├── Dockerfile # For containerizing the app
+├── Jenkinsfile # Jenkins pipeline definition
+├── terraform/ # Optional IaC configuration (Terraform)
+│ └── main.tf
+├── deployment-proof/ # Deployment proof (screenshots or URL)
+│ ├── jenkins-pipeline.png
+│ └── ecs-deployment.png
+├── docs/
+│ └── architecture.png # Architecture diagram
+├── README.md # You're here!
+└── WRITEUP.md # Short write-up of tools, challenges, and improvements
+```
+
+
